@@ -5,7 +5,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 import { HeroService } from './services/hero.service';
 
 @Component({
-    selector: 'my-app',
+    selector: 'moiz-app',
     templateUrl: 'app/main.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [
