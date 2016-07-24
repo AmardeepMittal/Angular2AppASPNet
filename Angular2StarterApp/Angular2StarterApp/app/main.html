@@ -1,0 +1,54 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" style="color:white !important">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Heros <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+                    <li><a [routerLink]="['/heroes']" routerLinkActive="active">Heroes</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dragons <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a [routerLink]="['/dragons/admin']" routerLinkActive="active">Admin</a></li>
+                    <li><a [routerLink]="['/dragons']" routerLinkActive="active">Dragons</a></li>
+                    <li><a [routerLink]="['/dragons/5']" routerLinkActive="active">Details</a></li>
+                    <li><a [routerLink]="['/']" routerLinkActive="active">Back</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a [routerLink]="['/dragons/admin']" routerLinkActive="active">Admin</a></li>
+                        <li><a [routerLink]="['/dragons']" routerLinkActive="active">Dragons</a></li>
+                        <li><a [routerLink]="['/dragons/5']" routerLinkActive="active">Details</a></li>
+                        <li><a [routerLink]="['/']" routerLinkActive="active">Back</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Admin 1</a></li>
+                        <li><a href="#">Admin 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+<router-outlet></router-outlet>
