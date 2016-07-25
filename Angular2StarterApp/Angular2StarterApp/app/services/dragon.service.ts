@@ -1,17 +1,17 @@
-﻿import { Hero } from '../models/hero';
-import { HEROES } from '../appdata/mock-dragons';
+﻿import { Dragon } from '../models/dragon';
+import { DRAGONS } from '../appdata/mock-dragons';
 import { Injectable } from '@angular/core';
 
 @Injectable()
 export class DragonService {
     getHeroes() {
-        return Promise.resolve(HEROES);
+        return Promise.resolve(DRAGONS);
     }
 
     // See the "Take it slow" appendix
     getHeroesSlowly() {
-        return new Promise<Hero[]>(resolve =>
-            setTimeout(() => resolve(HEROES), 2000) // 2 seconds
+        return new Promise<Dragon[]>(resolve =>
+            setTimeout(() => resolve(DRAGONS), 2000) // 2 seconds
         );
     }
 

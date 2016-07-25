@@ -1,9 +1,30 @@
 "use strict";
-exports.HEROES = [
-    { id: 11, name: 'Dragon 1' },
-    { id: 12, name: 'Dragon 2' },
-    { id: 13, name: 'Dragon 3' },
-    { id: 14, name: 'Dragon 4' },
-    { id: 15, name: 'Dragon 5' }
+exports.DRAGONS = [
+    {
+        id: 11, name: 'Dragon 1',
+        imageUrl: 'http://www.toptenbestin.com/wp-content/uploads/2015/06/axe-wallpaper-1.jpg',
+        details: 'He is the red animal who can kill you if you piss him off',
+        abilites: ["Fire Breath", "Teleportation"]
+    },
+    {
+        id: 12, name: 'Dragon 2',
+        imageUrl: 'http://www.toptenbestin.com/wp-content/uploads/2015/06/axe-wallpaper-1.jpg',
+        details: 'He is the red animal who can kill you if you piss him off',
+        abilites: ["Fire Breath", "Teleportation"]
+    },
+    {
+        id: 13, name: 'Dragon 3',
+        imageUrl: 'http://www.toptenbestin.com/wp-content/uploads/2015/06/axe-wallpaper-1.jpg',
+        details: 'He is the red animal who can kill you if you piss him off',
+        abilites: ["Fire Breath", "Teleportation"] },
+    {
+        id: 14, name: 'Dragon 4',
+        imageUrl: 'http://www.toptenbestin.com/wp-content/uploads/2015/06/axe-wallpaper-1.jpg',
+        details: 'He is the red animal who can kill you if you piss him off',
+        abilites: ["Fire Breath", "Teleportation"] },
+    {
+        id: 15, name: 'Dragon 5', imageUrl: 'http://www.toptenbestin.com/wp-content/uploads/2015/06/axe-wallpaper-1.jpg',
+        details: 'He is the red animal who can kill you if you piss him off',
+        abilites: ["Fire Breath", "Teleportation"] }
 ];
 //# sourceMappingURL=mock-dragons.js.map

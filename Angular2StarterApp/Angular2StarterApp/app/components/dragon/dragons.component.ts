@@ -3,14 +3,11 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 import { DragonService } from '../../services/dragon.service';
 
 @Component({
-    template: `
-    <h2>DRAGON CENTER</h2>
-    <p>This is First Main Page : {{title}}</p><br/>
-    <router-outlet></router-outlet>`,
+    templateUrl: 'app/components/dragon/views/dragons.component.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [DragonService]
 })
 
 export class DragonsComponent {
-    title = 'Page 1'
+    title = 'DRAGON CENTER'
 }

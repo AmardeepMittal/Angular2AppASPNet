@@ -9,15 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var dragon_service_1 = require('../../services/dragon.service');
 var DragonListComponent = (function () {
-    function DragonListComponent() {
+    function DragonListComponent(router, dragonService) {
+        this.router = router;
+        this.dragonService = dragonService;
         this.title = 'Dragon List';
+        this.dragonList = [];
     }
+    DragonListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dragonService.getHeroes()
+            .then(function (dragon) { return _this.dragonList = dragon; });
+    };
+    DragonListComponent.prototype.showDetails = function (dragon) {
+        //let link = ['/hero/detail', hero.id];
+        //this.router.navigate(link);
+    };
     DragonListComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>This is DRagon list page</h2>\n    <p>Get your dragon here: {{title}}</p>"
+            templateUrl: 'app/components/dragon/views/dragon-list.component.html',
+            styleUrls: ['app/components/dragon/css/dragon-list.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router, dragon_service_1.DragonService])
     ], DragonListComponent);
     return DragonListComponent;
 }());

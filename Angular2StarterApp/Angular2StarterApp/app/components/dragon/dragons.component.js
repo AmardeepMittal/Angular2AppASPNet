@@ -13,11 +13,11 @@ var router_1 = require('@angular/router');
 var dragon_service_1 = require('../../services/dragon.service');
 var DragonsComponent = (function () {
     function DragonsComponent() {
-        this.title = 'Page 1';
+        this.title = 'DRAGON CENTER';
     }
     DragonsComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>DRAGON CENTER</h2>\n    <p>This is First Main Page : {{title}}</p><br/>\n    <router-outlet></router-outlet>",
+            templateUrl: 'app/components/dragon/views/dragons.component.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [dragon_service_1.DragonService]
         }), 

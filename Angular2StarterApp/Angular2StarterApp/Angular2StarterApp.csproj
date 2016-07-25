@@ -96,6 +96,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\dragon\css\dragon-list.component.css" />
+    <Content Include="app\components\dragon\views\dragon-list.component.html" />
+    <Content Include="app\components\dragon\views\dragons.component.html" />
     <Content Include="app\components\errorHandling\error.component.html" />
     <Content Include="app\components\hero\css\hero-detail.component.css" />
     <Content Include="app\components\hero\css\heroes.component.css" />
@@ -153,6 +156,7 @@
     <TypeScriptCompile Include="app\components\hero\hero-main.component.ts" />
     <TypeScriptCompile Include="app\components\hero\heroes.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\models\dragon.ts" />
     <TypeScriptCompile Include="app\models\hero.ts" />
     <TypeScriptCompile Include="app\services\dragon.service.ts" />
     <TypeScriptCompile Include="app\services\hero.service.ts" />

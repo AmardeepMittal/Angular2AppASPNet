@@ -14,12 +14,12 @@ var DragonService = (function () {
     function DragonService() {
     }
     DragonService.prototype.getHeroes = function () {
-        return Promise.resolve(mock_dragons_1.HEROES);
+        return Promise.resolve(mock_dragons_1.DRAGONS);
     };
     // See the "Take it slow" appendix
     DragonService.prototype.getHeroesSlowly = function () {
         return new Promise(function (resolve) {
-            return setTimeout(function () { return resolve(mock_dragons_1.HEROES); }, 2000);
+            return setTimeout(function () { return resolve(mock_dragons_1.DRAGONS); }, 2000);
         } // 2 seconds
          // 2 seconds
         );

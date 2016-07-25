@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-3" *ngFor="let dragon of dragonList" (click)="showDetails(dragon)">
+            <div class="thumbnail">
+                <img src="{{dragon.imageUrl}}" alt="{{dragon.name}}">
+                <div class="caption">
+                    <h6>{{dragon.name}}</h6>
+                    <p>{{dragon.details}}</p>
+                    <p>
+                        <a href="#" class="btn btn-primary btn-sm" role="button">Duel Him</a>
+                        <a href="#" class="btn btn-default btn-sm" role="button">History</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
