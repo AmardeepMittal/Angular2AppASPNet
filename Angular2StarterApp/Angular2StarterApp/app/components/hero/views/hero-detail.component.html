@@ -1,11 +1,10 @@
 ﻿<div *ngIf="hero">
     <h2>{{hero.name}} details!</h2>
-    <div>
-        <label>id: </label>{{hero.id}}
+
+    <label>Id: </label>{{hero.id}}
+    <div class="form-group">
+        <label for="heroName">Name </label>
+        <input class="form-control" id="heroName" [(ngModel)]="hero.name" placeholder="name" style="width:150px;"/>
     </div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]="hero.name" placeholder="name" />
-    </div>
-    <button (click)="goBack()">Back</button>
+    <button class="btn btn-primary" (click)="goBack()">Back</button>
 </div>

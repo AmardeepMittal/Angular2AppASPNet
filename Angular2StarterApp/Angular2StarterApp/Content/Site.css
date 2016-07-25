@@ -1,0 +1,350 @@
+﻿body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.ui-menu-item {
+    width: 190px;
+}
+
+.ui-menu {
+    z-index: 9999;
+}
+
+.ui-autocomplete .ui-menu-item {
+    width: 375px !important;
+    padding: 1px;
+    list-style-image: none;
+}
+
+    .ui-autocomplete .ui-menu-item .panel {
+        margin: 0px !important;
+        width: 100%;
+        height: 130px;
+    }
+
+.property-carousel .panel {
+    margin: 0px !important;
+}
+
+.ui-autocomplete .ui-menu-item .propertyImage {
+    width: 128px !important;
+    height: 128px !important;
+}
+
+.angular-grid-20results {
+    width: 100%;
+    height: 760px;
+}
+
+.angular-grid-15results {
+    width: 100%;
+    height: 595px;
+}
+
+.angular-grid-10results {
+    width: 100%;
+    height: 348px;
+}
+
+.angular-grid-5results {
+    width: 100%;
+    height: 185px;
+}
+
+.dropdownheading {
+    font-size: 12px;
+    line-height: 150% !important;
+}
+
+.dropdowndetail {
+    font-size: 10px;
+}
+
+.div-dropdownimg {
+    float: left;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+.div-dropdowntext {
+    float: left;
+    width: 230px;
+}
+
+.img-star {
+    float: right;
+    cursor: pointer;
+}
+
+.img-thumbnail {
+    width: 110px;
+    height: 110px;
+}
+
+#txtSearch {
+    max-width: 377px !important;
+    width: 377px !important;
+}
+
+.dl-leftaligned dt {
+    text-align: left !important;
+}
+
+.dl-horizontal dd {
+    margin-bottom: 10px !important;
+}
+
+dl.cp-data-list-col1 dt {
+    width: 37.5%;
+}
+
+dl.cp-data-list-col1 dd {
+    width: 62.5%;
+}
+
+/* Google Map Styles */
+.gm-style-iw {
+    width: 430px !important;
+    max-width: 430px !important;
+    padding: 0px !important;
+}
+
+    .gm-style-iw .panel {
+        width: 420px;
+        margin: 0px;
+        border: 0px;
+    }
+/* END - Google Map Styles */
+
+.dashboard {
+    font-family: 'amplitude-regularregular';
+}
+
+    .dashboard .title {
+        font-family: 'amplitude-mediumregular';
+    }
+
+.dashboard-icon.green {
+    background-color: #5FA834;
+}
+
+    .dashboard-icon.green:hover {
+        background-color: #4C862A;
+    }
+
+.dashboard-icon.yellow {
+    background-color: #FACC4C;
+}
+
+.dashboard-icon.orange {
+    background-color: #E6502B;
+}
+
+    .dashboard-icon.orange:hover {
+        background-color: #B84022;
+    }
+
+.dashboard-icon.red {
+    background-color: #9D1317;
+}
+
+    .dashboard-icon.red:hover {
+        background-color: #7E0F12;
+    }
+
+.dashboard-icon.grey {
+    background-color: #2D2D2D;
+}
+
+.dashboard-icon.amber {
+    background-color: #f0a30a;
+}
+
+.dashboard-icon.grey:hover {
+    background-color: #1F1F1F;
+}
+
+.dashboard-icon {
+    display: inline-block;
+    font-size: 1.1em;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    width: 126px;
+    height: 126px;
+    line-height: 42px;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+}
+
+    .dashboard-icon > div {
+        padding: 2px 3px 3px 3px;
+        width: 100%;
+        height: 33%;
+    }
+
+.dashboard-icon-smalltext {
+    font-family: 'amplitude-mediumregular';
+    padding-top: 3px !important;
+    font-size: 14px !important;
+    line-height: 18px;
+}
+
+
+.dashboard-panel {
+    padding: 3px;
+}
+
+.dashboard-modal {
+    margin-top: 120px;
+    max-width: 1160px !important;
+    width: 92% !important;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
+#googleMap {
+    background: transparent url(/Images/ajax-loader.gif) no-repeat center center;
+}
+
+.table tbody tr.sub-total,
+.table tfoot tr.total {
+    background-color: lightgray;
+    color: #000;
+}
+
+.table tbody tr th.sub-total,
+.table tfoot tr th.total {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.property-vacant {
+    background-color: rgba(255, 0, 0, 0.10);
+}
+
+    .property-vacant:hover {
+        background-color: rgb(71, 143, 129);
+    }
+
+legend {
+    font-weight: bold;
+    font-size: inherit;
+    padding-left: 15px;
+}
+
+.ui-grid-header-cell .ui-grid-icon-plus-squared {
+    display: none !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-middle {
+    vertical-align: middle !important;
+}
+
+.blocking-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20%;
+    z-index: 1000;
+}
+
+    .blocking-mask div {
+        background: #fff;
+        margin: 0 auto;
+        width: 240px;
+        border: 1px solid #c2c2c2;
+        padding: 20px;
+        color: black;
+        box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.2);
+    }
+
+.form-wrapper {
+    margin: 10px 10px;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+.font-amp {
+    font-family: 'amplitude-mediumregular' !important;
+}
+
+.ui-grid-filter-select {
+    height: 30px;
+}
+
+p.isReadOnly input {
+    background-color: #eee !important;
+}
+
+p.isReadOnly button {
+    background-color: #eee !important;
+}
+
+.nav-font-small {
+    font-size: 96%;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.icon-small {
+    font-size: small;
+    padding: 0px 5px;
+    vertical-align: middle;
+    width: 0;
+}
+
+.comment-icon-md {
+    padding: 0px 10px;
+    width: 35px;
+    font-size: 25px;
+    opacity: 0.7;
+    cursor: pointer;
+    color: #1a7462;
+}
+
+    .comment-icon-md:hover {
+        opacity: 1;
+    }
+
+.comment-history {
+    text-align: left;
+    min-height: 150px;
+    max-height: 250px;
+    overflow-x: auto;
+}
+
+.comment-date-section {
+    font-style: italic;
+    font-size: 12px;
+}

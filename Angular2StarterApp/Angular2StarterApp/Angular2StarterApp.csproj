@@ -96,12 +96,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\errorHandling\error.component.html" />
     <Content Include="app\components\hero\css\hero-detail.component.css" />
     <Content Include="app\components\hero\css\heroes.component.css" />
     <Content Include="app\components\hero\views\dashboard.component.html" />
     <Content Include="app\components\hero\views\hero-detail.component.html" />
     <Content Include="app\components\hero\views\heroes.component.html" />
     <Content Include="app\main.html" />
+    <Content Include="Content\dotacustom.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Images\logo2.png" />
+    <Content Include="Images\brand-logo.png" />
+    <Content Include="Images\side-logo.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -138,9 +145,12 @@
     <TypeScriptCompile Include="app\components\dragon\dragon-list.component.ts" />
     <TypeScriptCompile Include="app\components\dragon\dragon.routes.ts" />
     <TypeScriptCompile Include="app\components\dragon\dragons.component.ts" />
+    <TypeScriptCompile Include="app\components\errorHandling\error.component.ts" />
+    <TypeScriptCompile Include="app\components\errorHandling\error.routes.ts" />
     <TypeScriptCompile Include="app\components\hero\dashboard.component.ts" />
     <TypeScriptCompile Include="app\components\hero\hero-detail.component.ts" />
     <TypeScriptCompile Include="app\components\hero\hero.routes.ts" />
+    <TypeScriptCompile Include="app\components\hero\hero-main.component.ts" />
     <TypeScriptCompile Include="app\components\hero\heroes.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\models\hero.ts" />

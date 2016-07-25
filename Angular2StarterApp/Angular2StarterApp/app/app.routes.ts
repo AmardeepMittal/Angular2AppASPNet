@@ -4,15 +4,17 @@ import { LocationStrategy, HashLocationStrategy, APP_BASE_HREF } from '@angular/
 
 import { heroesRoutes } from './components/hero/hero.routes';
 import { dragonRoutes } from './components/dragon/dragon.routes';
+//import { errorRoutes } from './components/errorHandling/error.routes';
 
 const routes: RouterConfig = [
-    ...heroesRoutes,
-    ...dragonRoutes
     //{
     //    path: '',
-    //    redirectTo: '/dashboard',
+    //    redirectTo: '/hero',
     //    pathMatch: 'full'
     //},
+    { path: '', redirectTo: 'hero', pathMatch: 'full' },
+    ...heroesRoutes,
+    ...dragonRoutes
     //{
     //    path: 'dragon',
     //    component: DragonsComponent

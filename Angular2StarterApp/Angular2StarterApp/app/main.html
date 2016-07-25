@@ -1,4 +1,4 @@
-﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+﻿<!--<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container" style="color:white !important">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Angular Play</a></li>
@@ -20,9 +20,84 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav>-->
 
 
+<div class="cp-footer-push">
+    <header>
+        <div class="cp-header">
+            <div class="cp-header-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="/"><img style="max-height:75px;" src="/Images/side-logo.png" alt="League Of Dota" class="cp-logo-right"></a>
+                            <a href="/"><img style="max-height:75px;" src="/Images/brand-logo.png" alt="League Of Dota" class="cp-logo-left"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-primary-nav">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Heros <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+                                            <li><a [routerLink]="['/heroes']" routerLinkActive="active">Heroes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dragons <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a [routerLink]="['/dragons/admin']" routerLinkActive="active">Admin</a></li>
+                                            <li><a [routerLink]="['/dragons']" routerLinkActive="active">Dragons</a></li>
+                                            <li><a [routerLink]="['/dragons/5']" routerLinkActive="active">Details</a></li>
+                                            <li><a [routerLink]="['/']" routerLinkActive="active">Back</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <router-outlet></router-outlet>
+    </main>
+    <footer>
+        <div class="cp-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cp-footer-inner">
+                            <ul class="cp-link-list">
+                                <li>
+                                    League of Legends <sup>&#174;</sup>
+                                </li>
+                                <li style="text-transform:none;">
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 <!--<nav class="navbar navbar-default">
     <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,5 +125,3 @@
         </div>
     </div>
 </nav>-->
-
-<router-outlet></router-outlet>
