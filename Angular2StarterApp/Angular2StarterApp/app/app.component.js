@@ -18,7 +18,7 @@ var AppComponent = (function () {
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
+            selector: 'moiz-app',
             templateUrl: 'app/main.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [

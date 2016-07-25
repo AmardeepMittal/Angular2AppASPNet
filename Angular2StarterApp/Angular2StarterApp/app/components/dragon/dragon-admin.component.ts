@@ -7,5 +7,5 @@
 })
 
 export class DragonAdminComponent {
-    title = 'Dragon Admin Page'
+    title = 'Dragon Admin Page Changed'
 }
