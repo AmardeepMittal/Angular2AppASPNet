@@ -20,15 +20,24 @@ var DragonListComponent = (function () {
     }
     DragonListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.dragonService.getHeroes()
+        this.dragonService.getDragons()
             .then(function (dragon) { return _this.dragonList = dragon; });
     };
+    //ngOnInit() {
+    //    this.dragonService.getHeroes()
+    //        .subscribe(
+    //        heroes => this.dragonList = heroes,
+    //            error => this.errorMessage = <any>error
+    //        )
+    //        //.then(dragon => this.dragonList = dragon);
+    //}
     DragonListComponent.prototype.showDetails = function (dragon) {
         //let link = ['/hero/detail', hero.id];
         //this.router.navigate(link);
     };
     DragonListComponent = __decorate([
         core_1.Component({
+            selector: 'dragon-list',
             templateUrl: 'app/components/dragon/views/dragon-list.component.html',
             styleUrls: ['app/components/dragon/css/dragon-list.component.css']
         }), 

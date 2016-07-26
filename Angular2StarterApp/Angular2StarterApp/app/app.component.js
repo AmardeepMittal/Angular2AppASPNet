@@ -8,9 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/// <reference path="main.ts" />
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var http_1 = require('@angular/http');
+// Add the RxJS Observable operators we need in this app.
+require('./rxjs-operators'); //This is not Working (Open BUG)
 var hero_service_1 = require('./services/hero.service');
 var AppComponent = (function () {
     function AppComponent() {
@@ -22,7 +24,7 @@ var AppComponent = (function () {
             templateUrl: 'app/main.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [
-                hero_service_1.HeroService
+                hero_service_1.HeroService, http_1.HTTP_PROVIDERS
             ]
         }), 
         __metadata('design:paramtypes', [])

@@ -1,0 +1,83 @@
+﻿<!--<form class="cp-form">
+    <div class="form-group">
+        <label for="dName">Dragon Name</label>
+        <input type="text" [(ngModel)]="dragonInfo.name" class="form-control" id="dName" placeholder="Dragon Name">
+    </div>
+    <div class="form-group">
+        <label for="dDetails">Details:</label>
+        <textarea id="dDetails" [(ngModel)]="dragonInfo.details" class="form-control" rows="3" placeholder="Description..."></textarea>
+    </div>
+    <div class="form-group">
+        <label for="dImage">Dragon Image</label>
+        <input type="file" id="dImage" [(ngModel)]="dragonInfo.imageUrl">
+        <p class="help-block">Click to add dragon image.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div>
+    <button type="button" (click)="addDragon()" class="btn btn-default">Submit</button>
+</form>-->
+
+<div class="container">
+    <div [hidden]="submitted">
+        <h1>{{title}}</h1>
+        <form (ngSubmit)="addDragon()" #dragonForm="ngForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" required
+                       [(ngModel)]="dragonInfo.name"
+                       name="name" #name="ngModel">
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Name is required
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="details">Details</label>
+                <textarea type="text" class="form-control" rows="3" placeholder="Description..."
+                          [(ngModel)]="dragonInfo.details"
+                          name="details" #details="ngModel"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="abilites">Abilities</label>
+                <select class="form-control" required
+                        [(ngModel)]="dragonInfo.skill"
+                        name="skill" #skill="ngModel">
+                    <option *ngFor="let p of abiList" [value]="p">{{p}}</option>
+                </select>
+                <div [hidden]="skill.valid || skill.pristine" class="alert alert-danger">
+                    Ability is required
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default" [disabled]="!dragonForm.form.valid">Submit</button>
+            <button type="button" class="btn btn-default" (click)="newDragon()">New Hero</button>
+            <!--<div>
+                <hr>
+                Name via form.controls = {{showFormControls(dragonForm)}}
+            </div>-->
+        </form>
+    </div>
+
+    <div [hidden]="!submitted">
+        <h2>You submitted the following:</h2>
+        <div class="row">
+            <div class="col-xs-3">Id</div>
+            <div class="col-xs-9  pull-left">{{ dragonInfo.id }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Name</div>
+            <div class="col-xs-9  pull-left">{{ dragonInfo.name }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Details</div>
+            <div class="col-xs-9 pull-left">{{ dragonInfo.details }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Abilites</div>
+            <div class="col-xs-9 pull-left">{{ dragonInfo.skill }}</div>
+        </div>
+        <br>
+        <button class="btn btn-default" (click)="submitted=false">Edit</button>
+    </div>
+</div>

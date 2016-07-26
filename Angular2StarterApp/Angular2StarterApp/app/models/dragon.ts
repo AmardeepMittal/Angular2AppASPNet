@@ -1,7 +1,11 @@
 ﻿export class Dragon {
-    id: number;
-    name: string;
-    imageUrl: string;
-    details: string;
-    abilites: string[];
+
+    constructor(
+        public id?: number,
+        public name?: string,
+        public details?: string,
+        public skill?: string,
+        public imageUrl?: string,
+        public abilites?: string[]
+    ) { }
 }

@@ -17,6 +17,7 @@ var DragonsComponent = (function () {
     }
     DragonsComponent = __decorate([
         core_1.Component({
+            selector: 'dragon-container',
             templateUrl: 'app/components/dragon/views/dragons.component.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [dragon_service_1.DragonService]

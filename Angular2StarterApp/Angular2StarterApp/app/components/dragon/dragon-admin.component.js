@@ -9,13 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var dragon_add_form_1 = require('./forms/dragon-add-form');
+var dragon_service_1 = require('../../services/dragon.service');
 var DragonAdminComponent = (function () {
     function DragonAdminComponent() {
-        this.title = 'Dragon Admin Page Changed';
+        this.title = 'Dragon Admin Page';
     }
     DragonAdminComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>This is dragon Admin Page</h2>\n    <p>Manage dragon here: {{title}}</p>"
+            selector: 'dragon-admin',
+            templateUrl: 'app/components/dragon/views/dragon-admin.component.html',
+            directives: [dragon_add_form_1.DragonAddFormComponent],
+            providers: [dragon_service_1.DragonService]
         }), 
         __metadata('design:paramtypes', [])
     ], DragonAdminComponent);
