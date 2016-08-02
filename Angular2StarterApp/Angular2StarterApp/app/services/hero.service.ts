@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class HeroService {
     getHeroes() {
-        return Promise.resolve(HEROES);
+        return true ? Promise.resolve(HEROES) : Promise.resolve(new Array<Hero>());
     }
 
     // See the "Take it slow" appendix

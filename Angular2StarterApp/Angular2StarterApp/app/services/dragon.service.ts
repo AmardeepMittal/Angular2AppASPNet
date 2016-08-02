@@ -16,11 +16,11 @@ export class DragonService {
     private dragons: Dragon[]
     private addedDragon: Dragon
 
-    getDragons() {
-        return this.http.get(this.dragonUrl)
+    getDragons(): Promise<Dragon[]> {
+        return false ? this.http.get(this.dragonUrl)
             .forEach(p => this.dragons = this.extractData(p) as Dragon[])
             .then(response => this.dragons)
-            .catch(this.handleError);
+            .catch(this.handleError) : Promise.resolve( this.dragons );
             //.toPromise()
             //.then(response => response.json().data as Dragon[])
             //.catch(this.handleError);

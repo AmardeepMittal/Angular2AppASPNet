@@ -14,7 +14,7 @@ var HeroService = (function () {
     function HeroService() {
     }
     HeroService.prototype.getHeroes = function () {
-        return Promise.resolve(mock_heroes_1.HEROES);
+        return true ? Promise.resolve(mock_heroes_1.HEROES) : Promise.resolve(new Array());
     };
     // See the "Take it slow" appendix
     HeroService.prototype.getHeroesSlowly = function () {

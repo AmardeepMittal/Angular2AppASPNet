@@ -20,10 +20,10 @@ var DragonService = (function () {
     }
     DragonService.prototype.getDragons = function () {
         var _this = this;
-        return this.http.get(this.dragonUrl)
+        return false ? this.http.get(this.dragonUrl)
             .forEach(function (p) { return _this.dragons = _this.extractData(p); })
             .then(function (response) { return _this.dragons; })
-            .catch(this.handleError);
+            .catch(this.handleError) : Promise.resolve(this.dragons);
         //.toPromise()
         //.then(response => response.json().data as Dragon[])
         //.catch(this.handleError);
