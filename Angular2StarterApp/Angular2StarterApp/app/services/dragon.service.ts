@@ -17,7 +17,7 @@ export class DragonService {
     private addedDragon: Dragon
 
     getDragons(): Promise<Dragon[]> {
-        return false ? this.http.get(this.dragonUrl)
+        return true ? this.http.get(this.dragonUrl)
             .forEach(p => this.dragons = this.extractData(p) as Dragon[])
             .then(response => this.dragons)
             .catch(this.handleError) : Promise.resolve( this.dragons );
